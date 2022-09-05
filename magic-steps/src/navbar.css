@@ -29,7 +29,7 @@
     text-decoration:none; 
 }
 
-.list-1 li a, .list-2 li a:hover {
+.list-1 li, .list-2 li:hover {
     cursor: pointer; 
     color: yellow; 
 }

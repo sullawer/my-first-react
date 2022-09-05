@@ -15,7 +15,8 @@ function Navbar() {
 
   const [drop, SetDropdown]= useState(false);  
 
-  return (
+
+  return ( 
     <div className='Navbar'>
      <div className="nav-bar-1">
       <ul className="list-1"> 
@@ -46,7 +47,7 @@ function Navbar() {
        {drop && <Dropdown/>}
     </div>
   ); 
- 
+
 }
 
 

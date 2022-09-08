@@ -10,11 +10,7 @@ import Dropdown from './Dropdown';
 
 
 function Navbar() {
-  
-
   const [dropOnlyForGames, setDropdownOnlyForGames]= useState(false);  
-
-
   return ( 
     <div className='Navbar'>
      <div className="nav-bar-1">

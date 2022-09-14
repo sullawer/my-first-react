@@ -25,7 +25,7 @@
     color:white; 
     text-decoration: none; 
     letter-spacing: 0;
-    font-family: GeoBrandBlack,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
     font-size: 16px;
     line-height: 1.25;
     margin-right: 5px; 
@@ -42,7 +42,9 @@
  .ikona:hover {
     color: yellow; 
 }
-
+.dropdownmenu {
+    display: flex; 
+}
 .dropdown {
     display:flex; 
     flex-direction:row; 
@@ -56,10 +58,16 @@
 .dropdown .name {
     color:black; 
     text-decoration: none; 
-    letter-spacing: 0;
+    letter-spacing: 0px;
     font-family: GeoBrandBlack,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
     font-size: 16px;
     line-height: 1.25;
     margin-right: 5px; 
+}
+.slicica {
+    box-sizing: border-box;
+    height: 722px; 
+    width: 100%; 
+
 }
 

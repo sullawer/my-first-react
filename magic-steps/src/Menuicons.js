@@ -1,11 +1,26 @@
 import React from "react";
 import './Menuicons.css'; 
+import styled, {css} from "styled-components";
+import { IconBase, IconContext } from 'react-icons/lib';
 
-function Menuicons1({icon, name}) {
+
+
+const Ime=styled.div `
+color: ${props => props.fHover=== true ? '#fc0' : 'white'}; 
+margin-left: 5 px; 
+`
+
+const Ikona=styled.div `
+color: ${props => props.fHover=== true ? '#fc0' : 'white'}; 
+margin-left: 10px; 
+
+`
+
+function Menuicons1({icon, name,isHovere }) {
   return (
     <div className="MenuList">
-        <div className="name"> {name}</div>
-        <div className="ikona">  {icon} </div>
+        <Ime  fHover={isHovere}> {name}</Ime>
+        <Ikona fHover={isHovere}>{icon} </Ikona>
     </div>
   ); 
 }

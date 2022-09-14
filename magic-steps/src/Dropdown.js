@@ -1,23 +1,35 @@
 import React from "react";
-import Menuicons1 from "./Menuicons";
 import './Menuicons'; 
+import './navbar.css'; 
 
 
-function Dropdown({ name}) {
+
+export default function Dropdown() {
+  
   return (
    
-    <div className="dropdownmenu">
-    <ul class="dropdown">
-              <li><a href="#"><Menuicons1   name="QUIZZES"/></a></li>
-              <li><a href="#"><Menuicons1   name="PERSONALITY QUIZZES"/></a></li>
-              <li><a href="#"><Menuicons1   name="PUZZLES"/></a></li>
-              <li><a href="#"><Menuicons1  name="ACTION"/></a></li>
-              <li><a href="#"><Menuicons1   name="FUNNY FILL-IN"/></a></li>
-           </ul>
+    <div className="dropdownmenu" >
+      <ul class="dropdown">
+              <li><a href="#">QUIZZES</a></li>
+              <li><a href="#">PERSONALITY QUIZZES</a></li>
+              <li><a href="#">PUZZLES</a></li>
+              <li><a href="#">ACTION</a></li>
+              <li><a href="#">FUNNY FILL-IN</a></li>
+      </ul>
    </div> 
+
+
   ); 
+
+
 }
 
 
-export default Dropdown;
+
+
+
+
+
+
+
 

@@ -4,6 +4,7 @@ import Menuicons1 from './Menuicons';
 import Menuicons2 from './Menuicons2'; 
 import {FaGamepad, FaSearch, FaShoppingCart, FaBars,FaPlayCircle, FaInternetExplorer, FaEdit, FaPaw, FaStopCircle, FaCaretDown} from 'react-icons/fa'; 
 import Dropdown from './Dropdown';
+import Dropdown2 from './Dropdown2';
 
 
 
@@ -11,8 +12,8 @@ function Navbar() {
   
   const [changeColor, setChangeColor]= useState (false); 
   const [changeColor2, setChangeColor2]= useState (false); 
- 
   const [dropOnlyForGames, setDropdownOnlyForGames]= useState(false);  
+  const[dropOnlyForVideo, setDropdownOnlyForVideos]= useState(false); 
  
 
 
@@ -35,8 +36,12 @@ function Navbar() {
        <ul className="list-2"> 
          <li onMouseEnter={() => setDropdownOnlyForGames(true)} onMouseLeave={() => setDropdownOnlyForGames(false)}><a href="#">
           <Menuicons2 isHovered={dropOnlyForGames}  name="GAMES"  icon={<FaGamepad/>}   icon2={dropOnlyForGames&& <FaCaretDown/>}/> </a></li>
-         <li><a href="#">
-          <Menuicons2   name="VIDEOS"   icon={<FaPlayCircle />} /></a></li>
+
+
+         <li onMouseEnter={()=>setDropdownOnlyForVideos(true) } onMouseLeave={()=> setDropdownOnlyForVideos(false)}><a href="#">
+          <Menuicons2 isHovered={dropOnlyForVideo}  name="VIDEOS"   icon={<FaPlayCircle />}  icon2={dropOnlyForVideo&& <FaCaretDown/>} /></a></li>
+
+
          <li><a href="#">
           <Menuicons2 name="ANIMALS"  icon={<FaPaw />} /></a></li>
          <li><a href="#">
@@ -52,6 +57,10 @@ function Navbar() {
 
      <div calssName="probni-div " onMouseEnter={()=>setDropdownOnlyForGames(true)} onMouseLeave={() => setDropdownOnlyForGames(false)}>
        {dropOnlyForGames && <Dropdown/> }
+     </div>
+
+     <div calssName="probni-div " onMouseEnter={()=>setDropdownOnlyForVideos(true)} onMouseLeave={() => setDropdownOnlyForVideos(false)}>
+       {dropOnlyForVideo && <Dropdown2/> }
      </div>
 
     </div>

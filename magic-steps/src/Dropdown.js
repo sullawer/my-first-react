@@ -1,10 +1,10 @@
 import React from "react";
 import './Menuicons'; 
 import './navbar.css'; 
-import styled from "styled-components";
 
 
-function Dropdown() {
+
+export default function Dropdown() {
   
   return (
    
@@ -28,6 +28,8 @@ function Dropdown() {
 
 
 
-export default Dropdown;
+
+
+
 
 

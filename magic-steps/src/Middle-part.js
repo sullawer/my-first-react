@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components'; 
 import './Menuicons.css'; 
 import './navbar.css'; 
-import ReactPlayer from 'react-player';
+
+
+
 
 const TITLE=styled.div `
 color:white; 
-font-size: 16px;
+font-size: 17px;
 font-weight: 400;
 letter-spacing: 3px;
 margin-bottom: 8px;  
@@ -21,24 +23,18 @@ padding-top: 10px;
 
 
 export default function Middle() {
-  const poster="vieo-bg.jpg";
   return (
     <div class="middle-content">
      <div class="middle-window">
 
-     <ReactPlayer 
-      controls 
-      width='902px'
-      height='507px'
-      poster={poster}
-      url='https://www.youtube.com/watch?v=nsOtOye-DJM'  
-      />
-     
-      <p className='text'>
-        <TITLE> CALIFORNIA </TITLE>
-       MC Cali the valley quail takes Barry the bald eagle around the United States's most populated state: California. 
-       The Golden State has the largest economy of any state in the country. 
-       From agriculture to technology to movie-making, Californians keep busy while enjoying some of the most stunnin...
+    <div className="video">
+        <iframe src="https://www.youtube.com/embed/JQ2WZPWuMvg?controls=0&amp;modestbranding=1&amp;showinfo=0" title="NatGeoVideo"
+         frameborder="0" allowfullscreen></iframe>
+      </div>
+
+     <p className='text'>
+        <TITLE>         CUTEST CRITTERS YOU'LL WANT TO CUDDLE </TITLE>
+         Watch as we count down the either CUTEST CRITTERS we can't stop cooing over!               
       </p>
       </div> 
     </div>
